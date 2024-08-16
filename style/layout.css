@@ -1,0 +1,71 @@
+#app {
+    display: grid;
+    grid-template-columns: 51.25% 48.7%;
+    gap: 1.25rem;
+
+    height: 100vh;
+    overflow: hidden;
+
+    background: var(--shape-body);
+}
+
+aside {
+    background-image: url(../assets/Background.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.75rem;
+
+    margin: auto;
+
+    width: 25rem;
+    height: 45.5rem;
+
+
+    & .aside-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 2rem;
+
+        & > header > img {
+            margin-bottom: 2rem;
+        }
+    }
+
+    & h2 {
+        font-family: 'Leckerli One' sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: var(--pink);
+
+        margin-bottom: 4px;
+    }
+
+    & p {
+        font: var(--body-md);
+        color: var(--text-heading);
+    }
+
+}
+
+main {
+    overflow: auto;
+    padding: 4rem;
+
+    & .main-container {
+        max-width: 51.25rem;
+        margin-left: auto;
+
+        & .about-event {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    & h1 {
+        font: var(--heading-md);
+        margin: 2.5rem auto;
+    }
+}

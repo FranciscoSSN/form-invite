@@ -1,0 +1,59 @@
+input, textarea, select {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 2px solid var(--input-base);
+    color: white;
+    outline: none;
+    background-color: var(--input-stroke);
+
+    padding: .75rem 1rem;
+
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
+}
+
+label {
+    font: var(--body-md);
+    color: var(--text-body);
+
+    display: block;
+    margin-bottom: .75rem;
+}
+
+input:focus,
+textarea:focus,
+input[type="date"]:focus-within {
+    outline: .25rem solid transparent;
+    border-color: var(--brand-light);
+    outline-offset: .1px;
+}
+
+input[type="date"] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../assets/calendar.svg);
+        right: 1rem;
+        width: 1rem;
+        height: 1rem;
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.address .flex {
+    gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]) {
+    opacity: .5rem;
+}
