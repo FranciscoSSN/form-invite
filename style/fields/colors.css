@@ -38,6 +38,11 @@
 
     cursor: pointer;
 
+    &:focus {
+        border-color: var(--brand-light);
+        outline-offset: .1px;
+    }
+
     & img {
         width: 146px;
         height: 74px;
@@ -45,6 +50,8 @@
         border-radius: 4px;
 
         margin-bottom: 16px;
+
+        
     }
 
     & p {
@@ -52,3 +59,26 @@
         color: var(--text-heading);
     }
 }
+
+
+
+.file-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    & input[type="file"] {
+        max-width: 176px;
+
+        background: transparent;
+        outline: 2px solid transparent;
+        
+    }
+
+    & p {
+        font: var(--body-sm);
+        color: var(--text-heading);
+    }
+}
+
