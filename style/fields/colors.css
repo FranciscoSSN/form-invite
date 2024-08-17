@@ -1,0 +1,54 @@
+.input-color {
+    & label {
+        margin-bottom: 1rem;
+    }
+  
+    & .color-container {
+    display: flex;
+    justify-content: space-between;
+
+    cursor: pointer;
+  }
+}
+
+.theme-wrapper {
+    font: var(--font-body);
+
+    margin-bottom: 1rem;
+}
+
+.event-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-color: var(--shape-button);
+    border-radius: 8px;
+    width: 9.375rem;
+    height: 8.43rem;
+
+    padding: 0.25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+
+    & img {
+        width: 146px;
+        height: 74px;
+
+        border-radius: 4px;
+
+        margin-bottom: 16px;
+    }
+
+    & p {
+        font: var(--body-sm);
+        color: var(--text-heading);
+    }
+}

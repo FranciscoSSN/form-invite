@@ -1,59 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de convite</title>
-    <link rel="stylesheet" href="./style/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./style/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="app">
-        <aside>
-            <div class="aside-container">
-                <header>
-                    <img src="assets/Logo.svg" alt="Logo enfeites de aniversário">
-                    <h2>Festivite</h2>
-                    <p>Crie um convite digital para o seu evento</p>
-                </header>
+      <aside>
+        <div class="aside-container">
+          <header>
+            <img src="assets/Logo.svg" alt="Logo enfeites de aniversário" />
+            <h2>Festivite</h2>
+            <p>Crie um convite digital para o seu evento</p>
+          </header>
 
-                <div class="aside-image"></div>
-            </div>
-        </aside>
-        
-        <main>
-            <div class="main-container">
-                <h1>Crie seu convite</h1>
+          <div class="aside-image"></div>
+        </div>
+      </aside>
 
-                <form>
-                    <fieldset class="address">
-                        <div class="about-event">
-                            <img src="assets/calendar.svg" alt="ícone do calendario">
-                            <h2>Sobre o evento</h2>
+      <main>
+        <div class="main-container">
+          <h1>Crie seu convite</h1>
+
+          <form>
+            <fieldset class="address">
+              <div class="about-event">
+                <img src="assets/calendar.svg" alt="ícone do calendario" />
+                <h2>Sobre o evento</h2>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input
+                  type="text"
+                  id="tilte"
+                  name="title"
+                  placeholder="Nome do Evento"
+                />
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="start">Início</label>
+                  <input type="date" name="start" id="start" />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="end">Fim</label>
+                  <input type="date" name="end" id="end" />
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="start">Tipo</label>
+                  <div class="input-image"></div>
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="local">Local</label>
+                  <input
+                    type="url"
+                    name="local"
+                    id="local"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="medical-info">Descrição</label>
+                <textarea
+                  name="medical-info"
+                  id="medical-info"
+                  cols="30"
+                  rows="5"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="about-event">
+                    <img src="assets/paintbrush-vertical.svg" alt="ícone do calendario" />
+                    <h2>Personalização</h2>
+                </div>
+
+                <div class="input-color">
+                    <label>Cor principal</label>
+                    <div class="color-container">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                        <img src="assets/color-default.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="theme-wrapper">
+                    <label>Tema do evento</label>
+
+                    <div class="event-container">
+                        <div class="container">
+                            <img src="assets/aniversario.jpg" alt="Tema de aniversário">
+                            <p>Aniversário</p>
                         </div>
 
-                        <div class="input-wrapper">
-                            <label for="title">Título</label>
-                            <input type="text" id="tilte" name="title" placeholder="Nome do Evento">
+                        <div class="container">
+                            <img src="assets/infantil.png" alt="Tema de festa infantil">
+                            <p>Infantil</p>
                         </div>
 
-                        <div class="flex">
-                            <div class="input-wrapper flex-2">
-                                <label for="start">Início</label>
-                                <input type="date" name="start" id="start">
-                            </div>
-
-                            <div class="input-wrapper flex-1">
-                                <label for="end">Fim</label>
-                                <input type="date" name="end" id="end">
-                            </div>
+                        <div class="container">
+                            <img src="assets/formatura.png" alt="Tema de festa formatura">
+                            <p>Formatura</p>
                         </div>
-                    </fieldset>
-                </form>
-            </div>
-        </main>
+
+                        <div class="container">
+                            <img src="assets/casamento.jpg" alt="Tema de festa casamento">
+                            <p>Casamento</p>
+                        </div>
+
+                        <div class="container">
+                            <img src="assets/cha-de-bebe.jpg" alt="Tema de festa chá de bebê">
+                            <p>Chá de bebê</p>
+                        </div>
+
+                        <div class="container">
+                            <img src="assets/cha-de-panela.jpg" alt="Tema de festa chá de panela">
+                            <p>Chá de panela</p>
+                        </div>
+
+                        <div class="container">
+                            <img src="assets/carnaval.jpg" alt="Tema de festa carnaval">
+                            <p>Carnaval</p>
+                        </div>
+
+                        <div class="container">
+                            <img src="assets/pascoa.jpg" alt="Tema de festa páscoa">
+                            <p>Páscoa</p>
+                        </div>
+
+                        <div class="container">
+                            <img src="assets/sao-joao.jpg" alt="Tema de festa São João">
+                            <p>São João</p>
+                        </div>
+
+                        <div class="container">
+                            <img src="assets/halloween.jpg" alt="Tema de festa halloween">
+                            <p>Halloween</p>
+                        </div>
+
+                        <div class="container">
+                            <img src="assets/natal.jpg" alt="Tema de festa natal">
+                            <p>Natal</p>
+                        </div>
+
+                        <div class="container">
+                            <img src="assets/outro.jpg" alt="Tema de festa outro">
+                            <p>Outro</p>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
